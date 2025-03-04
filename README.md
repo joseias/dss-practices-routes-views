@@ -1,4 +1,4 @@
-### # [DSS] Eloquent Practice
+### # [DSS] Routes Views Blade Practice
 
 ## Project initialization
 
