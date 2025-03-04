@@ -13,6 +13,7 @@ Configure the .env file setting the proper values for database, user and passwor
 php artisan key:generate
 php artisan migrate:install
 php artisan migrate
+php db:seed
 ```
 
 ## Troubleshooting
