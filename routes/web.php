@@ -27,7 +27,7 @@ Route::post('foo/bar', function () {
 
 
 Route::post('foo/post/request/{id}', function (Request $request, $id) {
-    // echo $(curl --location --request POST 'http://127.0.0.1:8000/post/request' --header 'Content-Type: application/json')
+    // echo $(curl --location --request POST 'http://127.0.0.1:8000/foo/post/request' --header 'Content-Type: application/json')
 
     $documents = implode(',', $request->get('documents'));
     return "POST-> foo/post/request/$id => $documents";
@@ -41,7 +41,7 @@ Route::get('user/parameter/{id}', function ($id) {
 
 
 Route::get('foo/user/parameter/{id1}/{id2}', function ($id1, $id2) {
-    //echo $(curl --location --request GET 'http://127.0.0.1:8000/user/parameter/jane/doe')
+    //echo $(curl --location --request GET 'http://127.0.0.1:8000/foo/user/parameter/jane/doe')
     return "GET->  foo/user/parameter/$id1/$id2";
 });
 
